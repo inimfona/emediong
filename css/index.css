@@ -51,12 +51,7 @@ body{
     background-color: black;
     transition: width 300ms, transform 300ms;
 }
-.hamburger:hover .onions{
-    width: 50%;
-}
-.hamburger:hover::after{
-    width: 15%;
-}
+
 .hamburger.active::after{
     width: 0;
 }
@@ -103,13 +98,24 @@ body{
         display: none;
     }
 }
+
 @media(min-width:600px){
     .small{
         display: none;
     }
 }
+@media(min-width:600px){
+    .small2{
+        display: none;
+    }
+}
 .small{
     position: absolute;
+    z-index: 3;
+}
+.dark{
+    position: absolute;
+    z-index: 1;
 }
 .arquitectura2{
     color: white;
