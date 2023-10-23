@@ -119,9 +119,9 @@ body{
 }
 .arquitectura2{
     color: white;
-    font-size: 30px;
+    font-size: 29px;
     font-weight: bold;
-    padding-top: 75px;
+    padding-top: 70px;
     position: relative;
     top: 25px;
    
@@ -188,8 +188,8 @@ body{
 }
 .contact{
     border: none;
-    background-color: white;
-    color: black;
+    background-color:black;
+    color: white;
     padding: 5px 10px 5px 10px;
     border-radius: 5px;
     position: relative;
@@ -197,8 +197,8 @@ body{
     font-size: 18px;
 }
 .contact:hover{
-    color: white;
-    background-color: black;
+    color: black;
+    background-color:white;
     transition: 400ms;
 }
 .read{
@@ -276,6 +276,7 @@ body{
 .LOL{
     box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2) !important;
     padding: 30px 5px 20px 5px;
+    margin-top: 20px;
 }
 
 @media(max-width:1000px){
@@ -329,15 +330,7 @@ body{
 .render2{
     border-radius: 5px;
 }
-body::-webkit-scrollbar{
-    width: 8px;
-}
-body::-webkit-scrollbar-track{
-    background-color: white;
-}
-body::-webkit-scrollbar-thumb{
-    background-color: gray;
-}
+
 .footer{
     background-color: black;
     margin-top: 70px;
@@ -436,9 +429,13 @@ body::-webkit-scrollbar-thumb{
     text-decoration: none;
     color: white;
 }
-#myVideo{
-    
+.dud{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}.dud2{
+    display: flex;
+    flex-wrap: wrap;
 }
-.small{
 
-}
+

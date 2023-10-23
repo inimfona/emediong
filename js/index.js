@@ -24,6 +24,7 @@ let item= document.getElementById('username')
 let email= document.getElementById('email')
 let form = document.querySelector('.form')
 let one = document.getElementById('one')
+let sendmail = document.getElementById('sendmail')
 
 form.addEventListener('submit',onsubmit)
 
@@ -54,14 +55,26 @@ function onsubmit(e){
         one.style.color=" red"
     } 
     else if (text.value ==='') {
-        one.innerHTML='Please input Text'
+        one.innerHTML='Text area is Empty'
         one.style.color=" red"
     } 
     else{
-        one.style.color=" rgb(1, 184, 1)"
-        one.innerHTML='Successful'
-        item.value ='';
-        email.value ='';
-        text.value ='';
-    }
-}
+            let params = {
+                name:document.getElementById('username').value,
+                email:document.getElementById('email').value,
+                message:document.getElementById('text').value
+            };
+            let serviceID="service_9j1oesx";
+        let templateID="template_bapjco4";
+        emailjs
+        .send(serviceID, templateID,params)
+        .then((res) => (
+            document.getElementById('username').value ="",
+            document.getElementById('email').value ="",
+            document.getElementById('text').value ="",
+            one.style.color=" rgb(1, 184, 1)",
+            one.innerHTML='Successful'
+        ))
+
+        } 
+        }
