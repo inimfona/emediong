@@ -78,3 +78,7 @@ function onsubmit(e){
 
         } 
         }
+let vv =document.querySelector('.vv')
+vv.addEventListener('click',()=>{
+    vv.classList.toggle('dog')
+})

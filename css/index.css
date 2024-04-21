@@ -188,17 +188,18 @@ body{
 }
 .contact{
     border: none;
-    background-color:black;
-    color: white;
+    background-color:white;
+    color: black;
     padding: 5px 10px 5px 10px;
     border-radius: 5px;
     position: relative;
     bottom: 30px;
     font-size: 18px;
+    margin-right: 10px;
 }
 .contact:hover{
-    color: black;
-    background-color:white;
+    color: white;
+    background-color:black;
     transition: 400ms;
 }
 .read{
@@ -336,6 +337,11 @@ body{
     margin-top: 70px;
     padding: 20px 0px 10px 0px;
 }
+.footer2{
+    background-color: black;
+   
+    padding: 20px 0px 10px 0px;
+}
 .glow{
     color: white;
     font-family: 'Space Grotesk', sans-serif ;
@@ -436,6 +442,12 @@ body{
 }.dud2{
     display: flex;
     flex-wrap: wrap;
+}
+.pot{
+  background-color: rgb(236, 236, 236);
+}
+.RESUME{
+    width: 100%;
 }
 
 
