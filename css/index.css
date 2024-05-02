@@ -78,10 +78,15 @@ body{
     }
 }
 @media(max-width:800px){
-    .bar2{
+    .bar2 {
         display: none;
+        
+    }
+    .black{
+        border-bottom: 1px solid rgb(204, 204, 204);
     }
 }
+
 @media(max-width:600px){
     .vegas-slide{
         display: none;
@@ -449,5 +454,15 @@ body{
 .RESUME{
     width: 100%;
 }
-
+.diamondlogo{
+    width: 130px;
+    padding: 5px 0px 5px 0px;
+}
+.arrow1{
+    float: right;
+    position: relative;
+    top: 10px;
+    cursor: pointer;
+    color: black;
+}
 
